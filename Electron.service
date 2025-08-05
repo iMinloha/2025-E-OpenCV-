@@ -1,0 +1,13 @@
+[Unit]
+Description=EC_Gimbal
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/orangepi/EC_Gimbal/build/EC_Gimbal  # 修改为你的可执行文件路径
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
